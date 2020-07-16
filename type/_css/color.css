@@ -1,0 +1,9 @@
+:root {
+    /* hex values  */
+    --color-text-black: #3d3b49;
+    --color-text-blue: #074387;
+    --color-text-white: #fff;
+
+    /* RGB values */
+    --color-text-blue-rgb: 7, 78, 135;
+}

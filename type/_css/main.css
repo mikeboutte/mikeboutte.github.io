@@ -1,0 +1,19 @@
+@viewport {
+	width: device-width;
+}
+
+:root {
+	font-size: 100%;
+}
+
+html {
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	background: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}

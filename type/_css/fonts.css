@@ -1,0 +1,47 @@
+:root {
+    --font-reader-body: "Guardian Egyptian";
+	--font-reader-body-bold: "Guardian Egyptian Bold";
+	--font-reader-body-italic: "Guardian Egyptian Italic";
+	--font-reader-body-bold-italic: "Guardian Egyptian Bold Italic";
+    --font-reader-header: "Gilroy Semi Bold";
+}
+
+@font-face {
+	font-family: "Gilroy Semi Bold";
+	font-weight: 600;
+	font-style: normal;
+	src: url("../_assets/fonts/Gilroy/Gilroy-SemiBold.woff");
+	src: url("../_assets/fonts/Gilroy/Gilroy-SemiBold.woff2");
+}
+
+@font-face {
+	font-family: "Guardian Egyptian";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-Regular.woff");
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-Regular.woff2");
+}
+
+@font-face {
+	font-family: "Guardian Egyptian Bold";
+	font-weight: 700;
+	font-style: bold;
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-Bold.woff");
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-Bold.woff2");
+}
+
+@font-face {
+	font-family: "Guardian Egyptian Italic";
+	font-weight: 400;
+	font-style: italic;
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-RegularIt.woff");
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-RegularIt.woff2");
+}
+
+@font-face {
+	font-family: "Guardian Egyptian Bold Italic";
+	font-weight: 700;
+	font-style: italic;
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-BoldIt.woff");
+	src: url("../_assets/fonts/GuardianEgyptian/GuardianTextEgyp-BoldIt.woff2");
+}

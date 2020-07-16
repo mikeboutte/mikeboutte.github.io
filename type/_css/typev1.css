@@ -1,0 +1,258 @@
+/******************************************************************************************************************************************************************************
+	
+	Uses major third (4:5) modular scale 18px base
+	Gilroy is used for headers and Guardian Egyptian for everything else.
+	
+******************************************************************************************************************************************************************************/
+/*
+	query for changing to breakpoint sizes
+	
+	@media only screen and (max-width: $breakpoint-xsm) {
+		font-size: 1rem;
+		line-height: 1.5rem;
+	};
+	
+	@media only screen and (min-width: $breakpoint-sm) {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	};
+*/
+
+section#reader {	
+	width: 100%;
+	max-width: 40rem;
+	margin: 24px 0 0 0;
+}
+
+section#reader.type_v1 {
+	color: var(--color-text-black);
+	font-family: var(--font-reader-body);
+	font-size: 1.125rem;
+	line-height: 2rem;
+}
+
+section#reader.type_v1 p {
+	font-size: 1.125rem;
+	line-height: 2rem;
+}
+
+section#reader.type_v1 p strong, section#reader.type_v1 p b {
+	font-family: var(--font-reader-body-bold);
+}
+
+section#reader.type_v1 p em, section#reader.type_v1 p i {
+	font-family: var(--font-reader-body-italic);
+}
+
+section#reader.type_v1 p strong em, section#reader.type_v1 p strong i, section#reader.type_v1 p b em, section#reader.type_v1 p b i, section#reader.type_v1 p em strong, section#reader.type_v1 p i strong, section#reader.type_v1 p em b, section#reader.type_v1 p i b {
+	font-family: var(--font-reader-body-bold-italic);
+}
+
+section#reader.type_v1 h1, section#reader.type_v1 h2, section#reader.type_v1 h3, section#reader.type_v1 h4, section#reader.type_v1 h5, section#reader.type_v1 h6 {
+	font-family:var(--font-reader-header);
+}
+
+section#reader.type_v1 h1 {
+	font-size: 3.433rem;
+	line-height: 4rem;
+	/*
+		top adjust 1px
+		margin-bottom 16px
+	*/
+	padding-top: 0.063rem;
+	margin: 0 0 .938rem 0;
+}
+
+section#reader.type_v1 h2 {
+	font-size: 2.746rem;
+	line-height: 3rem;
+	/*
+		top adjust 0
+		margin-bottom 16px
+		margin-top 41px
+	*/
+	padding-top: 0;
+	margin: 2.563rem 0 1rem 0;
+}
+
+section#reader.type_v1 h3 {
+	font-size: 2.197rem;
+	line-height: 2.5rem;
+	/*
+		top adjust 3px
+		margin-bottom 16px
+		margin-top 33px
+	*/
+	padding-top: .188rem;
+	margin: 2.063rem 0 .813rem 0;
+}
+
+section#reader.type_v1 h4 {
+	font-size: 1.758rem;
+	line-height: 2rem;
+	/*
+		top adjust 0
+		margin-bottom 8px
+		margin-top 25px
+	*/
+	padding-top: 0;
+	margin: 1.563rem 0 .5rem 0;
+}
+
+section#reader.type_v1 h5 {
+	font-size: 1.406rem;
+	line-height: 1.75rem;
+	/*
+		top adjust 2px
+		margin-bottom 8px
+	*/
+	padding-top: .125rem;
+	margin: 0 0 .375rem 0;
+}
+
+section#reader.type_v1 h6 {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	/*
+		top adjust 2px
+		margin-bottom 8px
+	*/
+	padding-top: .125rem;
+	margin: 0 0 .375rem 0;
+}
+
+/***********************************************
+phrasing content
+***********************************************/
+
+/* anchor option 1 that highlights from the left */
+section#reader.type_v1 a {
+	color: var(--color-text-blue);
+	font-family: var(--font-reader-body-bold);
+	text-decoration: none;
+	border-bottom: 1px solid var(--color-text-blue);
+	letter-spacing: .025rem;
+	margin: 0 .125rem 0 .125rem;
+	position: relative;
+}
+
+section#reader.type_v1 a:after {
+	position: absolute;
+	width: 0;
+	height: 140%;
+	background-color: rgba(var(--color-text-blue-rgb), .15);
+	content: '';
+	left: 0px;
+	padding: .5rem 0 0 0;
+	transition: width .4s cubic-bezier(0.000, 0.600, 0.210, 0.990);
+	z-index: -1;
+	line-height: 0;
+}
+
+section#reader.type_v1 a:hover:after {
+	transition: width .15s cubic-bezier(0.715, 0.045, 0.425, 0.915);
+	width: 100%;
+}
+
+section#reader.type_v1 a:focus {
+	outline-color: var(--color-text-blue);
+	background-color: rgba(var(--color-text-blue-rgb), .15);
+}
+
+section#reader.type_v1 a:active {
+	background-color: rgba(var(--color-text-blue-rgb), 1);
+	color: var(--color-text-white);
+}
+
+section#reader.type_v1 a:active:after {
+	background-color: rgba(var(--color-text-blue-rgb), 1);
+}
+
+/* ol and ul lists */
+section#reader.type_v1 ul, ol {
+	color: var(--color-text-black);
+	list-style-position: inside;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+	/*
+		top adjust 3px
+		margin-bottom 24px
+	*/
+	padding: .188rem 0 0 .5rem;
+	margin: 0 0 1.313rem 0;
+}
+
+section#reader.type_v1 ul li, section#reader.type_v1 ol li {
+	/*
+		top adjust 0 (padding is for layout)
+	*/
+	padding-top: 1rem;
+	margin: 0 0 0 0;
+	line-height: 1.5rem;
+}
+
+section#reader.type_v1 ul li:first-child, section#reader.type_v1 ol li:first-child {
+	padding-top: 0;
+}
+
+/*
+	sup
+	removes extra padding added to line height when sup tag is used
+	alters anchor option 1 animation design
+*/
+section#reader.type_v1 sup {
+	font-size: .844rem;
+	line-height: 0;
+	vertical-align: text-top;
+}
+
+section#reader.type_v1 sup a:after {
+	height: 60%;
+}
+
+/*
+	q
+*/
+section#reader.type_v1 q {
+	font-family: var(--font-reader-body-bold);
+}
+
+/*
+	blockquote
+*/
+section#reader.type_v1 blockquote {
+	margin: 40px 0 40px 0;
+	padding: 24px 32px 24px 32px;
+	line-height: 2rem;
+	border-top: 1px solid var(--color-text-black);
+	border-bottom: 1px solid var(--color-text-black);
+	position: relative;
+}
+
+section#reader.type_v1 blockquote:before {
+	content: "“";
+	font-size: 2rem;
+	position: absolute;
+	left: 0px;
+}
+
+section#reader.type_v1 blockquote footer {
+	margin: 24px 0 0 0;
+	font-family: var(--font-reader-header);
+}
+
+/*
+	cite
+*/
+section#reader.type_v1 cite {
+	font-family: var(--font-reader-body-italic);
+}
+
+/*
+	abbr
+*/
+
+/*
+	address
+*/
